@@ -12,7 +12,9 @@
 	"rightMargin": 20,
 	"bottomMargin": 20,
 	"events": [
-		"onLoad"
+		"onLoad",
+		"onTimer",
+		"onResize"
 	],
 	"windowTitle": "window title",
 	"destination": "detailScreen",
@@ -27,12 +29,9 @@
 					"left": 20,
 					"top": 20,
 					"width": 427,
-					"height": 437,
+					"height": 221,
 					"events": [
-						"onClick",
-						"onHeaderClick",
-						"onDataChange",
-						"onSelectionChange"
+						"onColumnResize"
 					],
 					"focusable": false,
 					"showHeaders": true,
@@ -42,6 +41,10 @@
 					"hideFocusRing": true,
 					"sizingX": "grow",
 					"sizingY": "grow",
+					"resizingMode": "rightToLeft",
+					"headerHeight": "2em",
+					"rowHeight": "2em",
+					"horizontalLineStroke": "transparent",
 					"columns": [
 						{
 							"header": {
@@ -55,14 +58,32 @@
 							},
 							"dataSourceTypeHint": "picture",
 							"pictureFormat": "scaled",
-							"dataSource": "arraySVG"
+							"dataSource": "arraySVG",
+							"width": 128,
+							"minWidth": 128,
+							"events": [
+								"onColumnResize"
+							],
+							"method": "ObjectMethods/Column1.4dm"
+						},
+						{
+							"header": {
+								"name": "Header2"
+							},
+							"name": "Column2",
+							"dataSource": "arrayTxt",
+							"footer": {
+								"name": "Footer2"
+							},
+							"resizable": false,
+							"width": 300
 						}
 					]
 				}
 			}
 		}
 	],
-	"geometryStamp": 14,
+	"geometryStamp": 25,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",
