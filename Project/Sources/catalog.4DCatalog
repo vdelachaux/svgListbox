@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="svgListbox" uuid="58284BCE44754C3C8DFC7D22035F277E" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+</base>
