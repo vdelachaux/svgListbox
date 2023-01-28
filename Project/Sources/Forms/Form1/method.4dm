@@ -38,7 +38,7 @@ $t:="100%"
 $svg:=SVG_New($width; $height)
 $rect:=SVG_New_rect($svg; 0.5; 0.5; $width; $height; 0; 0; "none"; "green")
 $text:=SVG_New_textArea($svg; $t; 0; 6; $width; $height; "sans-serif"; 12; Plain:K14:1; Align center:K42:3)
-SVG_SET_ATTRIBUTES($text; "width"; $t; "height"; "200%"; "fill"; "white")
+SVG_SET_ATTRIBUTES($text; "width"; $t; "height"; "100%"; "fill"; "white")
 
 $pict:=SVG_Export_to_picture($svg)
 SVG_CLEAR($svg)
